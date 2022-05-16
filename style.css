@@ -13,6 +13,7 @@
     --warm-black: #282623;
     --black: #201e1c;
     --grey: #bababa;
+    --dark-grey: #757575;
     --off-white: #faf8f7;
     --just-white: #fff;
 }
@@ -26,8 +27,8 @@ html {
     font-size: 62.5%;
 }
 header {
-    position: relative;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -35,16 +36,85 @@ header {
     min-width: 320px;
     height: 334px;
     text-align: center;
+    background: linear-gradient(207.8deg, var(--warm-black) 16.69%, var(--bitcoin-orange) 100%);
 }
 header img{
     width: 150px;
     height: 24px;
     margin-top: 60px;
 }
-.header--title-container {
+.header__title-container {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
     height: 218px;
     margin-top: 50px;
+}
+.header__title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.header__title-container p {
+    margin-top: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-style: normal;
+    color: var(--soft-orange)
+}
+.header__button {
+    position: absolute;
+    left: calc(50% - 114px);
+    top: calc(100% - 24px);
+    display: block;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header__button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/down-arrow.svg");
+}
+main {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main__exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main__exchange__title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main__exchange__title h2 {
+    color: var(--black);
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.main__exchange__title p {
+    color: var(--dark-grey);
+    font-size: 1.4rem;
+    line-height: 18px;
 }
