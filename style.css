@@ -88,6 +88,7 @@ header img{
     margin-left: 10px;
     background-image: url("./assets/icons/down-arrow.svg");
 }
+
 main {
     width: 100%;
     min-width: 320px;
@@ -128,33 +129,33 @@ main {
     font-size: 1.4rem;
     line-height: 18px;
 }
-.exchange__table1__container {
+.exchange__table1__container, .exchange__table2__container {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
+    height: auto;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 }
-.exchange__table1__container h2 {
+.exchange__table1__title {
     color: var(--bitcoin-orange);
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 24.44px;
     margin: 48px 100px 12px 0;
 }
-.exchange__table1__info {
+.exchange__table1__info, .exchange__table2__info {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
-    height: 250px;
+    height: auto;
     margin: 0 auto;
 }
-.exchange__table1__info table {
+.exchange__table1__info table, .exchange__table2__info table {
     width: 100%;
     width: 100%;
 }
-.exchange__table1__info td {
+.exchange__table1__info td, .exchange__table2__info td {
     width: 50%;
     font-size: 1.6rem;
     font-weight: 500;
@@ -162,4 +163,62 @@ main {
     color: var(--grey);
     background-color: var(--just-white);
     height: 40px;
+}
+.exchange__table1__info .table1--up-left-border, .exchange__table2__info .table2--up-left-border {
+    border-radius: 15px 0 0 0;
+}
+.exchange__table1__info .table1--up-right-border, .exchange__table2__info .table2--up-right-border {
+    border-radius: 0 15px 0 0;
+}
+.exchange__table1__info .table1--down-left-border, .exchange__table2__info .table2--down-left-border {
+    border-radius: 0 0 0 15px;
+}
+.exchange__table1__info .table1--down-right-border, .exchange__table2__info .table2--down-right-border {
+    border-radius: 0 0 15px 0;
+}
+.exchange__table1__info .table1--right, .exchange__table2__info .table2--right {
+    color: var(--dark-grey);
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    height: 40px;
+}
+.trending {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 12px;
+    height: 13px;
+    vertical-align: middle;
+    margin: 0 0 3px 10px;
+}
+.trending-up {
+    background-image: url("./assets/icons/trending-up.svg");
+}
+.trending-down {
+    background-image: url("./assets/icons/trending-down.svg");
+}
+.exchange__table1__update, .exchange__table2__update {
+    display: flex;
+    height: 31px;
+    width: 226px;
+    margin: 16px auto 0 auto;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.color-soft-orange {
+    background-color: var(--soft-orange);
+}
+.color-soft-blue {
+    background-color: var(--soft-blue);
+}
+.exchange__table2__title {
+    color: var(--secondary-blue);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 24.44px;
+    margin: 48px 90px 12px 0;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href=“https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500;700&display=swap” rel=“stylesheet”>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
@@ -26,34 +26,73 @@
             </div>
             <section class="main__exchange__table">
                 <div class="exchange__table1__container">
-                    <h2>Monedas</h2>
+                    <h2 class="exchange__table1__title">Monedas</h2>
                     <div class="exchange__table1__info">
                         <table>
                             <tr>
                                 <td class="table1--up-left-border">Bitcoin</td>
-                                <td class="table1--right">$1.96 <span class="--trending-down"></span></td>
+                                <td class="table1--right table1--up-right-border">$1.96 <span class="trending trending-down"></span></td>
                             </tr>
                             <tr>
                                 <td>Ethereum</td>
-                                <td class="table1--right">$0.07 <span class="--trending-up"></span></td>
+                                <td class="table1--right">$0.07 <span class="trending trending-up"></span></td>
                             </tr>
                             <tr>
                                 <td>Ripple</td>
-                                <td class="table1--right">$2.15 <span class="--trending-down"></span></td>
+                                <td class="table1--right">$2.15 <span class="trending trending-down"></span></td>
                             </tr>
                             <tr>
                                 <td class="table1--down-left-border">Stellar</td>
-                                <td class="table1--right table1--down-right-border">$4.96 <span class="--trending-down"></span></td>
+                                <td class="table1--right table1--down-right-border">$4.96 <span class="trending trending-down"></span></td>
                             </tr>
                         </table>
-                        <div>
-                            <p><b>Actualizado:</b> <script> document.write(new Date().toLocaleString());</script></p>
-                        </div>
+                    </div>
+                    <div class="exchange__table1__update color-soft-orange">
+                        <p><b>Actualizado:</b> <script> document.write(new Date().toLocaleString());</script></p>
+                    </div>
+                </div>
+                <div class="exchange__table2__container">
+                    <h2 class="exchange__table2__title">Comisiones</h2>
+                    <div class="exchange__table2__info">
+                        <table>
+                            <tr>
+                                <td class="table2--up-left-border">Bitrade</td>
+                                <td class="table2--right table2--up-right-border">$12.96</td>
+                            </tr>
+                            <tr>
+                                <td>Bitpreco</td>
+                                <td class="table2--right">$13.07</td>
+                            </tr>
+                            <tr>
+                                <td>Novadax</td>
+                                <td class="table2--right">$13.15</td>
+                            </tr>
+                            <tr>
+                                <td class="table2--down-left-border">Coinext</td>
+                                <td class="table2--right table2--down-right-border">$14.96</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="exchange__table2__update color-soft-blue">
+                        <p><b>Actualizado:</b> <script> document.write(new Date().toLocaleString());</script></p>
                     </div>
                 </div>
             </section>
         </section>
-        <section></section>
+        <section class="main__products-container">
+            <span></span>
+            <div class="products__title">
+                <h2>Creamos un producto sin comparación.</h2>
+                <p>Confiable y diseñado para su uso diario.</p>
+            </div>
+            <section class="product-cards-container">
+                <article class="product-cards__details">
+                    <span class="__clockImg"></span>
+                    <p class="product-cards__title">Tiempo real</p>
+                    <p class="product-cards__body">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
+                </article>
+            </section>
+        </section>
         <section></section>
         <section></section>
     </main>
