@@ -222,3 +222,89 @@ main {
     line-height: 24.44px;
     margin: 48px 90px 12px 0;
 }
+
+.main__products-container {
+    position: relative;
+    background-color: var(--black);
+    padding: 20px 10px;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+}
+.__batataImg {
+    position: absolute;
+    background-image: url("./assets/icons/batata.svg");
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+}
+.products__title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+.products__title h2 {
+    color: var(--just-white);
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+.products__title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.product-cards-container {
+    width: 100%;
+    height: auto;
+}
+.product-cards__details {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--warm-black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-cards__details .__card-logo {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 8px;
+    width: 24px;
+    height: 24px;
+}
+.__clockImg {
+    background-image: url("./assets/icons/clock.svg");
+}
+.__eyeImg {
+    background-image: url("./assets/icons/eye.svg");
+}
+.__dollarImg {
+    background-image: url("./assets/icons/dollar-sign.svg");
+}
+.__checkImg {
+    background-image: url("./assets/icons/check-circle.svg");
+}
+.product-cards__title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product-cards__body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
