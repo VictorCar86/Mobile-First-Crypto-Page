@@ -86,7 +86,7 @@ header img{
     width: 13px;
     height: 8px;
     margin-left: 10px;
-    background-image: url("./assets/icons/down-arrow.svg");
+    background-image: url("../assets/icons/down-arrow.svg");
 }
 
 main {
@@ -109,7 +109,7 @@ main {
     margin: 0 auto;
 }
 .__backgroundImg {
-    background-image: url(./assets/img/Bitcoin.svg);
+    background-image: url("../assets/img/Bitcoin.svg");
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -129,12 +129,21 @@ main {
     font-size: 1.4rem;
     line-height: 18px;
 }
+.main__exchange__table {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    height: 320px;
+    scroll-snap-type: x proximity;
+}
 .exchange__table1__container, .exchange__table2__container {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: auto;
-    margin: 0 auto;
+    margin: 0 30px 0 20px;
+    scroll-snap-align: center;
     font-family: "Inter", sans-serif;
 }
 .exchange__table1__title {
@@ -194,10 +203,10 @@ main {
     margin: 0 0 3px 10px;
 }
 .trending-up {
-    background-image: url("./assets/icons/trending-up.svg");
+    background-image: url("../assets/icons/trending-up.svg");
 }
 .trending-down {
-    background-image: url("./assets/icons/trending-down.svg");
+    background-image: url("../assets/icons/trending-down.svg");
 }
 .exchange__table1__update, .exchange__table2__update {
     display: flex;
@@ -233,7 +242,7 @@ main {
 }
 .__batataImg {
     position: absolute;
-    background-image: url("./assets/icons/batata.svg");
+    background-image: url("../assets/icons/batata.svg");
     width: 40px;
     height: 25px;
     top: -10px;
@@ -284,16 +293,16 @@ main {
     height: 24px;
 }
 .__clockImg {
-    background-image: url("./assets/icons/clock.svg");
+    background-image: url("../assets/icons/clock.svg");
 }
 .__eyeImg {
-    background-image: url("./assets/icons/eye.svg");
+    background-image: url("../assets/icons/eye.svg");
 }
 .__dollarImg {
-    background-image: url("./assets/icons/dollar-sign.svg");
+    background-image: url("../assets/icons/dollar-sign.svg");
 }
 .__checkImg {
-    background-image: url("./assets/icons/check-circle.svg");
+    background-image: url("../assets/icons/check-circle.svg");
 }
 .product-cards__title {
     margin-bottom: 15px;
@@ -309,11 +318,12 @@ main {
     color: #808080;
 }
 .bitcoin-img-container {
-    background-image: url("./assets/img/bitcoinbaby.jpg");
+    background-image: url("../assets/img/bitcoinbaby.jpg");
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .bitcoin-img-container h2 {
     font-size: 2.4rem;
@@ -324,8 +334,8 @@ main {
 
 .main__plans-container {
     width: 100%;
-    height: auto;
-    background-color: #E5E5E5;
+    height: 560px;
+    background-color: var(--off-white);
     text-align: center;
 }
 .plans__title h2 {
@@ -343,30 +353,43 @@ main {
     line-height: 1.8rem;
     color: var(--dark-grey);
 }
+.plans-container-slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+/* Recommended card */
 .plans-container__card {
     position: relative;
+    scroll-snap-align: center;
     height: 250px;
-    width: 70px;
+    width: 70%;
     min-width: 200px;
-    margin: 50px auto 0;
+    max-width: 250px;
+    margin: 50px 10px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
-.__recommended-signal {
+.__bets-offer-signal {
     position: absolute;
     color: var(--just-white);
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-    padding-top: 7px;
-    width: 101px;
+    padding: 7px;
+    width: auto;
     height: 31px;
-    background-color: var(--bitcoin-orange);
     border-radius: 10px;
     left: calc(50% - 50px);
     top: -15px;
+}
+.signal-bitcoin-color {
+    background-color: var(--bitcoin-orange);
 }
 .plans-container__offer h3 {
     font-size: 1.4rem;
@@ -381,16 +404,17 @@ main {
     line-height: 63px;
     font-family: "Inter";
     margin-top: 8px;
+    letter-spacing: -4px;
 }
 .__price .__dollar-sup {
     position: absolute;
     font-size: 12px;
     top: 42px;
-    left: calc(50% - 45px);
+    left: calc(50% - 42px);
     font-weight: 500;
 }
 .__price-description {
-    width: 158px;
+    width: 90%;
     font-size: 1.2rem;
     line-height: 15px;
     font-family: "Inter";
@@ -399,12 +423,71 @@ main {
 }
 .__purchase-button {
     display: inline-block;
+    position: relative;
     text-decoration: none;
     color: var(--black);
     font-size: 14px;
     font-weight: 700;
     padding: 15px 48px 15px 16px;
-    border: 2px solid var(--bitcoin-orange);
     border-radius: 5px;
     margin-top: 16px;
+    background-color: var(--off-white);
+}
+.button-bitcoin {
+    border: 2px solid var(--bitcoin-orange);
+    scroll-snap-align: start;
+}
+.__purchase-button span {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: 15px;
+    vertical-align: middle;
+}
+.button-bitcoin span {
+    background-image: url("../assets/icons/orange-right-arrow.svg");
+}
+/* Special offer card */
+.signal-blue-color {
+    background-color: var(--secondary-blue);
+}
+.button-blue {
+    border: 2px solid var(--secondary-blue);
+}
+.button-blue span {
+    background-image: url("../assets/icons/blue-right-arrow.svg");
+}
+/* Standard offer */
+.button-grey {
+    border: 2px solid var(--dark-grey);
+}
+.button-grey span {
+    background-image: url("../assets/icons/grey-right-arrow.svg");
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+.footer-sections {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: max-content;
+    width: 50%;
+    margin-top: 10px;
+}
+.footer-sections ul {
+    list-style: none;
+}
+.footer-sections ul a {
+    display: inline-block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: var(--just-white);
+    font-size: 1.6rem;
 }

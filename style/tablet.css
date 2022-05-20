@@ -1,0 +1,9 @@
+.main__exchange__table {
+    justify-content: center;
+}
+.exchange__table1__container, .exchange__table2__container {
+    max-width: 235px;
+}
+.bitcoin-img-container {
+    background-image: url("/assets/img/bitcoinbaby2x.jpg");
+}

@@ -1,0 +1,27 @@
+.main__exchange__table {
+    overflow-x: hidden;
+}
+.plans-container-slider {
+    justify-content: center;
+    overflow-x: hidden;
+}
+.product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product-cards__details {
+    margin: 7px calc(10% - 74px);
+}
+.exchange__table1__container, .exchange__table2__container {
+    max-width: 500px;
+}
+.bitcoin-img-container {
+    background-image: url("/assets/img/bitcoinbaby4x.jpg");
+}
+.footer-sections ul {
+    display: flex;
+}
+.footer-sections ul a {
+    margin: 0 15px;
+}

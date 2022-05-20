@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/tablet.css" media="(min-width: 570px)">
+    <link rel="stylesheet" href="./style/desktop.css" media="(min-width: 810px)">
     <title>Document</title>
 </head>
 <body>
@@ -118,17 +120,45 @@
             </div>
             <section class="plans-container-slider">
                 <article class="plans-container__card">
-                    <p class="__recommended-signal">Recomendado</p>
+                    <p class="__bets-offer-signal signal-blue-color">Oferta Especial</p>
+                    <div class="plans-container__offer">
+                        <h3>Pago Semestral</h3>
+                        <p class="__price"><sup class="__dollar-sup">$</sup>59</p>
+                        <p class="__price-description">*Un buen precio por un buen tiempo.</p>
+                        <a class="__purchase-button button-blue" href="#">Escoger este <span></span></a>
+                    </div>
+                </article>
+                <article class="plans-container__card">
+                    <p class="__bets-offer-signal signal-bitcoin-color">Recomendado</p>
                     <div class="plans-container__offer">
                         <h3>Pago Anual</h3>
                         <p class="__price"><sup class="__dollar-sup">$</sup>99</p>
                         <p class="__price-description">*Ahorras $129 comparado al plan mensual.</p>
-                        <a class="__purchase-button" href="#">Escoger este <span class="__button-arrow"></span></a>
+                        <a class="__purchase-button button-bitcoin" href="#">Escoger este <span></span></a>
+                    </div>
+                </article>
+                <article class="plans-container__card">
+                    <div class="plans-container__offer">
+                        <h3>Pago Mensual</h3>
+                        <p class="__price"><sup class="__dollar-sup">$</sup>19</p>
+                        <p class="__price-description">*Acceso a funcionalidades principales.</p>
+                        <a class="__purchase-button button-grey" href="#">Escoger este <span></span></a>
                     </div>
                 </article>
             </section>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="footer-sections">
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Crunchbase</a></li>
+                <li><a href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section class="footer-sections">
+            <img src="./assets/img/logo-footer.svg" alt="Logo de la empresa Batatabit">
+        </section>
+    </footer>
 </body>
 </html>
