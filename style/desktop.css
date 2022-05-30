@@ -17,7 +17,7 @@
     max-width: 500px;
 }
 .bitcoin-img-container {
-    background-image: url("/assets/img/bitcoinbaby4x.jpg");
+    background-image: url("../assets/img/bitcoinbaby4x.jpg");
 }
 .footer-sections ul {
     display: flex;
